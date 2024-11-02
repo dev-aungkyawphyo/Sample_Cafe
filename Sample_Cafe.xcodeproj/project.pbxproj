@@ -16,6 +16,11 @@
 		1D9ABC142CD6BFF300FB58CC /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC132CD6BFF300FB58CC /* Constans.swift */; };
 		1D9ABC172CD6C03C00FB58CC /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC162CD6C03C00FB58CC /* LoginScreenViewController.swift */; };
 		1D9ABC192CD6C05100FB58CC /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9ABC182CD6C05100FB58CC /* LoginScreen.storyboard */; };
+		1D9ABC1B2CD6C48C00FB58CC /* SampleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC1A2CD6C48C00FB58CC /* SampleTextField.swift */; };
+		1D9ABC1D2CD6C50700FB58CC /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC1C2CD6C50700FB58CC /* UITextField+Extensions.swift */; };
+		1D9ABC1F2CD6C52000FB58CC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC1E2CD6C52000FB58CC /* UIColor+Extensions.swift */; };
+		1D9ABC212CD6C58900FB58CC /* SampleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC202CD6C58900FB58CC /* SampleButton.swift */; };
+		1D9ABC232CD6C5A600FB58CC /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC222CD6C5A600FB58CC /* SampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		1D9ABC132CD6BFF300FB58CC /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		1D9ABC162CD6C03C00FB58CC /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		1D9ABC182CD6C05100FB58CC /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		1D9ABC1A2CD6C48C00FB58CC /* SampleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTextField.swift; sourceTree = "<group>"; };
+		1D9ABC1C2CD6C50700FB58CC /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		1D9ABC1E2CD6C52000FB58CC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1D9ABC202CD6C58900FB58CC /* SampleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButton.swift; sourceTree = "<group>"; };
+		1D9ABC222CD6C5A600FB58CC /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,9 @@
 		1D9ABC0F2CD6BFC100FB58CC /* SampleUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1D9ABC1A2CD6C48C00FB58CC /* SampleTextField.swift */,
+				1D9ABC202CD6C58900FB58CC /* SampleButton.swift */,
+				1D9ABC222CD6C5A600FB58CC /* SampleView.swift */,
 			);
 			path = SampleUIComponents;
 			sourceTree = "<group>";
@@ -144,6 +157,8 @@
 		1D9ABC102CD6BFCF00FB58CC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1D9ABC1C2CD6C50700FB58CC /* UITextField+Extensions.swift */,
+				1D9ABC1E2CD6C52000FB58CC /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,11 +251,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9ABC232CD6C5A600FB58CC /* SampleView.swift in Sources */,
+				1D9ABC1D2CD6C50700FB58CC /* UITextField+Extensions.swift in Sources */,
 				1D9ABBEF2CD6BAC000FB58CC /* AppDelegate.swift in Sources */,
 				1D9ABC0C2CD6BF8300FB58CC /* Storyboarded.swift in Sources */,
+				1D9ABC1F2CD6C52000FB58CC /* UIColor+Extensions.swift in Sources */,
 				1D9ABC142CD6BFF300FB58CC /* Constans.swift in Sources */,
+				1D9ABC212CD6C58900FB58CC /* SampleButton.swift in Sources */,
 				1D9ABC172CD6C03C00FB58CC /* LoginScreenViewController.swift in Sources */,
 				1D9ABC0E2CD6BFA800FB58CC /* SampleViewController.swift in Sources */,
+				1D9ABC1B2CD6C48C00FB58CC /* SampleTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
