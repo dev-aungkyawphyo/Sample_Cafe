@@ -57,7 +57,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-Qh-CKv">
                                                         <rect key="frame" x="0.0" y="0.0" width="313" height="55"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvT-8N-xvs">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvT-8N-xvs" customClass="SampleTextField" customModule="Sample_Cafe" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="313" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="gep-rq-g3o"/>
@@ -98,7 +98,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7JH-5R-9VG">
                                                         <rect key="frame" x="0.0" y="0.0" width="313" height="55"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pks-oY-2tg">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pks-oY-2tg" customClass="SampleTextField" customModule="Sample_Cafe" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="313" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="Qyq-if-2x7"/>
@@ -182,6 +182,16 @@
                             <constraint firstItem="uPH-cv-Syy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Zo5-A3-IFq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordErrorLabel" destination="94o-8w-9bc" id="lZU-lu-zUt"/>
+                        <outlet property="passwordTextField" destination="pks-oY-2tg" id="029-IC-zMh"/>
+                        <outlet property="phoneNoErrorLabel" destination="Jyp-r6-4qJ" id="fKW-4W-L9b"/>
+                        <outlet property="phoneNoTextField" destination="nvT-8N-xvs" id="qlt-0H-vHa"/>
+                        <outletCollection property="errorLabelCollection" destination="Jyp-r6-4qJ" collectionClass="NSMutableArray" id="hUT-dm-yRN"/>
+                        <outletCollection property="errorLabelCollection" destination="94o-8w-9bc" collectionClass="NSMutableArray" id="u2Y-K6-Mit"/>
+                        <outletCollection property="textFieldCollection" destination="nvT-8N-xvs" collectionClass="NSMutableArray" id="Zyd-dz-lmV"/>
+                        <outletCollection property="textFieldCollection" destination="pks-oY-2tg" collectionClass="NSMutableArray" id="dLL-ga-BgU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
