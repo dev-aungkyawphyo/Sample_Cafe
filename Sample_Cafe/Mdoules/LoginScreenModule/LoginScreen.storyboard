@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPH-cv-Syy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPH-cv-Syy" customClass="SampleView" customModule="Sample_Cafe" customModuleProvider="target">
                                 <rect key="frame" x="20" y="213" width="353" height="426"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dm4-Mh-fVD">
@@ -37,6 +37,9 @@
                                                 <state key="normal" title="Forgot Password?">
                                                     <color key="titleColor" name="PrimaryTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="forgotPasswordBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NbR-9z-5FJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-Fc-MIu">
                                                 <rect key="frame" x="246" y="0.0" width="67" height="34"/>
@@ -45,6 +48,9 @@
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" name="PrimaryTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PRK-TJ-vAt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -139,7 +145,7 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-Uv-iie">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-Uv-iie" customClass="SampleButton" customModule="Sample_Cafe" customModuleProvider="target">
                                         <rect key="frame" x="129.66666666666666" y="324" width="93.666666666666657" height="45"/>
                                         <color key="backgroundColor" name="PrimaryColor"/>
                                         <constraints>
@@ -155,6 +161,9 @@
                                                 <real key="value" value="22"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q0A-K2-PeP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -180,6 +189,8 @@
                             <constraint firstItem="uPH-cv-Syy" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.5" id="KNl-7L-7bx"/>
                             <constraint firstItem="uPH-cv-Syy" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Xcv-HK-05E"/>
                             <constraint firstItem="uPH-cv-Syy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Zo5-A3-IFq"/>
+                            <constraint firstItem="uPH-cv-Syy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cXU-KS-Ids"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uPH-cv-Syy" secondAttribute="trailing" constant="20" id="s9M-iZ-hs8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -198,6 +209,17 @@
             <point key="canvasLocation" x="65" y="-34"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="c7g-Uv-iie">
+            <size key="intrinsicContentSize" width="44" height="34"/>
+        </designable>
+        <designable name="nvT-8N-xvs">
+            <size key="intrinsicContentSize" width="96.666666666666671" height="18.666666666666668"/>
+        </designable>
+        <designable name="pks-oY-2tg">
+            <size key="intrinsicContentSize" width="62.333333333333336" height="18.666666666666668"/>
+        </designable>
+    </designables>
     <resources>
         <image name="lock" width="20" height="20"/>
         <namedColor name="BtnTextColor">
