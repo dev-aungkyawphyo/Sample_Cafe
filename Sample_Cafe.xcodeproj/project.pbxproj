@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D1ECB722CE13D3F0053ABD4 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1ECB712CE13D3F0053ABD4 /* LoginModel.swift */; };
+		1D1ECB782CE151960053ABD4 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1ECB772CE151960053ABD4 /* MapScreenViewController.swift */; };
+		1D1ECB7A2CE151A20053ABD4 /* FavouriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1ECB792CE151A20053ABD4 /* FavouriteScreenViewController.swift */; };
+		1D1ECB7C2CE151AC0053ABD4 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1ECB7B2CE151AC0053ABD4 /* ProfileScreenViewController.swift */; };
 		1D9871202CDAB45A000970C2 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98711F2CDAB45A000970C2 /* HomeScreenViewController.swift */; };
 		1D9871222CDAB482000970C2 /* ScreenBase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9871212CDAB482000970C2 /* ScreenBase.storyboard */; };
 		1D9ABBEF2CD6BAC000FB58CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABBEE2CD6BAC000FB58CC /* AppDelegate.swift */; };
@@ -26,10 +29,16 @@
 		1D9ABC232CD6C5A600FB58CC /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC222CD6C5A600FB58CC /* SampleView.swift */; };
 		1D9ABC272CD6C76E00FB58CC /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC262CD6C76E00FB58CC /* LoginScreenProtocols.swift */; };
 		1D9ABC2B2CD6C7E800FB58CC /* ValidationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC2A2CD6C7E800FB58CC /* ValidationErrors.swift */; };
+		1DFC26492CE1542D000F0A02 /* DesignableTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC26482CE1542D000F0A02 /* DesignableTabBarViewController.swift */; };
+		1DFC264B2CE154F6000F0A02 /* SampleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC264A2CE154F6000F0A02 /* SampleTabBar.swift */; };
+		1DFC264E2CE1553D000F0A02 /* SampleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC264D2CE1553D000F0A02 /* SampleImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D1ECB712CE13D3F0053ABD4 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		1D1ECB772CE151960053ABD4 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
+		1D1ECB792CE151A20053ABD4 /* FavouriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteScreenViewController.swift; sourceTree = "<group>"; };
+		1D1ECB7B2CE151AC0053ABD4 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
 		1D98711F2CDAB45A000970C2 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		1D9871212CDAB482000970C2 /* ScreenBase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScreenBase.storyboard; sourceTree = "<group>"; };
 		1D9ABBEB2CD6BAC000FB58CC /* Sample_Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample_Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +61,9 @@
 		1D9ABC2A2CD6C7E800FB58CC /* ValidationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrors.swift; sourceTree = "<group>"; };
 		1DD7D0F12CDEC56100151E6E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1DD7D0F22CDEC56100151E6E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		1DFC26482CE1542D000F0A02 /* DesignableTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTabBarViewController.swift; sourceTree = "<group>"; };
+		1DFC264A2CE154F6000F0A02 /* SampleTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTabBar.swift; sourceTree = "<group>"; };
+		1DFC264D2CE1553D000F0A02 /* SampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D1ECB742CE151560053ABD4 /* ProfileScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D1ECB7B2CE151AC0053ABD4 /* ProfileScreenViewController.swift */,
+			);
+			path = ProfileScreenModule;
+			sourceTree = "<group>";
+		};
+		1D1ECB752CE1515A0053ABD4 /* FavouriteScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D1ECB792CE151A20053ABD4 /* FavouriteScreenViewController.swift */,
+			);
+			path = FavouriteScreenModule;
+			sourceTree = "<group>";
+		};
+		1D1ECB762CE1515C0053ABD4 /* MapScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D1ECB772CE151960053ABD4 /* MapScreenViewController.swift */,
+			);
+			path = MapScreenModule;
+			sourceTree = "<group>";
+		};
 		1D98711E2CDAB43F000970C2 /* HomeScreenModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +171,9 @@
 				1D9ABBF92CD6BAC100FB58CC /* LaunchScreen.storyboard */,
 				1D9ABC152CD6C02A00FB58CC /* LoginScreenModule */,
 				1D98711E2CDAB43F000970C2 /* HomeScreenModule */,
+				1D1ECB762CE1515C0053ABD4 /* MapScreenModule */,
+				1D1ECB752CE1515A0053ABD4 /* FavouriteScreenModule */,
+				1D1ECB742CE151560053ABD4 /* ProfileScreenModule */,
 			);
 			path = Mdoules;
 			sourceTree = "<group>";
@@ -152,6 +191,7 @@
 			children = (
 				1D9ABC0D2CD6BFA800FB58CC /* SampleViewController.swift */,
 				1D9ABC0B2CD6BF8300FB58CC /* Storyboarded.swift */,
+				1DFC264C2CE15504000F0A02 /* DesignableTabBar */,
 				1D9ABC0F2CD6BFC100FB58CC /* SampleUIComponents */,
 				1D9ABC102CD6BFCF00FB58CC /* Extensions */,
 				1D9ABC132CD6BFF300FB58CC /* Constans.swift */,
@@ -174,6 +214,7 @@
 				1D9ABC1A2CD6C48C00FB58CC /* SampleTextField.swift */,
 				1D9ABC202CD6C58900FB58CC /* SampleButton.swift */,
 				1D9ABC222CD6C5A600FB58CC /* SampleView.swift */,
+				1DFC264D2CE1553D000F0A02 /* SampleImageView.swift */,
 			);
 			path = SampleUIComponents;
 			sourceTree = "<group>";
@@ -212,6 +253,15 @@
 				1DD7D0F12CDEC56100151E6E /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DFC264C2CE15504000F0A02 /* DesignableTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1DFC26482CE1542D000F0A02 /* DesignableTabBarViewController.swift */,
+				1DFC264A2CE154F6000F0A02 /* SampleTabBar.swift */,
+			);
+			path = DesignableTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +339,18 @@
 			files = (
 				1D9ABC232CD6C5A600FB58CC /* SampleView.swift in Sources */,
 				1D1ECB722CE13D3F0053ABD4 /* LoginModel.swift in Sources */,
+				1DFC26492CE1542D000F0A02 /* DesignableTabBarViewController.swift in Sources */,
+				1D1ECB7A2CE151A20053ABD4 /* FavouriteScreenViewController.swift in Sources */,
 				1D9871202CDAB45A000970C2 /* HomeScreenViewController.swift in Sources */,
 				1D9ABC1D2CD6C50700FB58CC /* UITextField+Extensions.swift in Sources */,
 				1D9ABBEF2CD6BAC000FB58CC /* AppDelegate.swift in Sources */,
+				1DFC264B2CE154F6000F0A02 /* SampleTabBar.swift in Sources */,
+				1DFC264E2CE1553D000F0A02 /* SampleImageView.swift in Sources */,
 				1D9ABC0C2CD6BF8300FB58CC /* Storyboarded.swift in Sources */,
 				1D9ABC1F2CD6C52000FB58CC /* UIColor+Extensions.swift in Sources */,
+				1D1ECB7C2CE151AC0053ABD4 /* ProfileScreenViewController.swift in Sources */,
 				1D9ABC142CD6BFF300FB58CC /* Constans.swift in Sources */,
+				1D1ECB782CE151960053ABD4 /* MapScreenViewController.swift in Sources */,
 				1D9ABC212CD6C58900FB58CC /* SampleButton.swift in Sources */,
 				1D9ABC272CD6C76E00FB58CC /* LoginScreenProtocols.swift in Sources */,
 				1D9ABC172CD6C03C00FB58CC /* LoginScreenViewController.swift in Sources */,

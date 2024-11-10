@@ -1,22 +1,14 @@
 //
-//  HomeScreenViewController.swift
+//  ProfileScreenViewController.swift
 //  Sample_Cafe
 //
-//  Created by Aung Kyaw Phyo on 06/11/2024.
+//  Created by Aung Kyaw Phyo on 11/11/2024.
 //
 
 import UIKit
 
-class HomeScreenViewController: SampleViewController {
+class ProfileScreenViewController: UIViewController {
 
-    // MARK: - IBOutlets
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var userImageView: UIImageView!
-    @IBOutlet weak var searchBar: UISearchBar!
-    
-    @IBOutlet weak var productCollection: UICollectionView!
-    @IBOutlet weak var shopCollection: UICollectionView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
