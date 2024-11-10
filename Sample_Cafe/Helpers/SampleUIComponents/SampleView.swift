@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class BogaView: UIView {
+class SampleView: UIView {
     
     @IBInspectable
     var cornerRadius: CGFloat {

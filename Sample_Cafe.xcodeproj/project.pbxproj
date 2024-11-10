@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1ECB722CE13D3F0053ABD4 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1ECB712CE13D3F0053ABD4 /* LoginModel.swift */; };
+		1D9871202CDAB45A000970C2 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98711F2CDAB45A000970C2 /* HomeScreenViewController.swift */; };
+		1D9871222CDAB482000970C2 /* ScreenBase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9871212CDAB482000970C2 /* ScreenBase.storyboard */; };
 		1D9ABBEF2CD6BAC000FB58CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABBEE2CD6BAC000FB58CC /* AppDelegate.swift */; };
 		1D9ABBF82CD6BAC100FB58CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9ABBF72CD6BAC100FB58CC /* Assets.xcassets */; };
 		1D9ABBFB2CD6BAC100FB58CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D9ABBFA2CD6BAC100FB58CC /* Base */; };
@@ -21,9 +24,14 @@
 		1D9ABC1F2CD6C52000FB58CC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC1E2CD6C52000FB58CC /* UIColor+Extensions.swift */; };
 		1D9ABC212CD6C58900FB58CC /* SampleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC202CD6C58900FB58CC /* SampleButton.swift */; };
 		1D9ABC232CD6C5A600FB58CC /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC222CD6C5A600FB58CC /* SampleView.swift */; };
+		1D9ABC272CD6C76E00FB58CC /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC262CD6C76E00FB58CC /* LoginScreenProtocols.swift */; };
+		1D9ABC2B2CD6C7E800FB58CC /* ValidationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ABC2A2CD6C7E800FB58CC /* ValidationErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D1ECB712CE13D3F0053ABD4 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		1D98711F2CDAB45A000970C2 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		1D9871212CDAB482000970C2 /* ScreenBase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScreenBase.storyboard; sourceTree = "<group>"; };
 		1D9ABBEB2CD6BAC000FB58CC /* Sample_Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample_Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9ABBEE2CD6BAC000FB58CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D9ABBF72CD6BAC100FB58CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +48,10 @@
 		1D9ABC1E2CD6C52000FB58CC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1D9ABC202CD6C58900FB58CC /* SampleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButton.swift; sourceTree = "<group>"; };
 		1D9ABC222CD6C5A600FB58CC /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		1D9ABC262CD6C76E00FB58CC /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
+		1D9ABC2A2CD6C7E800FB58CC /* ValidationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrors.swift; sourceTree = "<group>"; };
+		1DD7D0F12CDEC56100151E6E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1DD7D0F22CDEC56100151E6E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +65,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D98711E2CDAB43F000970C2 /* HomeScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D98711F2CDAB45A000970C2 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreenModule;
+			sourceTree = "<group>";
+		};
 		1D9ABBE22CD6BABF00FB58CC = {
 			isa = PBXGroup;
 			children = (
 				1D9ABBED2CD6BAC000FB58CC /* Sample_Cafe */,
 				1D9ABBEC2CD6BAC000FB58CC /* Products */,
+				1DD7D0F02CDEC56100151E6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +131,10 @@
 		1D9ABC052CD6BD5900FB58CC /* Mdoules */ = {
 			isa = PBXGroup;
 			children = (
+				1D9871212CDAB482000970C2 /* ScreenBase.storyboard */,
 				1D9ABBF92CD6BAC100FB58CC /* LaunchScreen.storyboard */,
 				1D9ABC152CD6C02A00FB58CC /* LoginScreenModule */,
+				1D98711E2CDAB43F000970C2 /* HomeScreenModule */,
 			);
 			path = Mdoules;
 			sourceTree = "<group>";
@@ -119,6 +142,7 @@
 		1D9ABC062CD6BD5C00FB58CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1D1ECB712CE13D3F0053ABD4 /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +190,7 @@
 		1D9ABC112CD6BFD900FB58CC /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				1D9ABC2A2CD6C7E800FB58CC /* ValidationErrors.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -174,9 +199,19 @@
 			isa = PBXGroup;
 			children = (
 				1D9ABC162CD6C03C00FB58CC /* LoginScreenViewController.swift */,
+				1D9ABC262CD6C76E00FB58CC /* LoginScreenProtocols.swift */,
 				1D9ABC182CD6C05100FB58CC /* LoginScreen.storyboard */,
 			);
 			path = LoginScreenModule;
+			sourceTree = "<group>";
+		};
+		1DD7D0F02CDEC56100151E6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DD7D0F22CDEC56100151E6E /* libsqlite3.0.tbd */,
+				1DD7D0F12CDEC56100151E6E /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +276,7 @@
 				1D9ABBF82CD6BAC100FB58CC /* Assets.xcassets in Resources */,
 				1D9ABC192CD6C05100FB58CC /* LoginScreen.storyboard in Resources */,
 				1D9ABBFB2CD6BAC100FB58CC /* Base in Resources */,
+				1D9871222CDAB482000970C2 /* ScreenBase.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +288,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D9ABC232CD6C5A600FB58CC /* SampleView.swift in Sources */,
+				1D1ECB722CE13D3F0053ABD4 /* LoginModel.swift in Sources */,
+				1D9871202CDAB45A000970C2 /* HomeScreenViewController.swift in Sources */,
 				1D9ABC1D2CD6C50700FB58CC /* UITextField+Extensions.swift in Sources */,
 				1D9ABBEF2CD6BAC000FB58CC /* AppDelegate.swift in Sources */,
 				1D9ABC0C2CD6BF8300FB58CC /* Storyboarded.swift in Sources */,
 				1D9ABC1F2CD6C52000FB58CC /* UIColor+Extensions.swift in Sources */,
 				1D9ABC142CD6BFF300FB58CC /* Constans.swift in Sources */,
 				1D9ABC212CD6C58900FB58CC /* SampleButton.swift in Sources */,
+				1D9ABC272CD6C76E00FB58CC /* LoginScreenProtocols.swift in Sources */,
 				1D9ABC172CD6C03C00FB58CC /* LoginScreenViewController.swift in Sources */,
+				1D9ABC2B2CD6C7E800FB58CC /* ValidationErrors.swift in Sources */,
 				1D9ABC0E2CD6BFA800FB58CC /* SampleViewController.swift in Sources */,
 				1D9ABC1B2CD6C48C00FB58CC /* SampleTextField.swift in Sources */,
 			);
@@ -419,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycreationcollections.Sample-Cafe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,6 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycreationcollections.Sample-Cafe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
